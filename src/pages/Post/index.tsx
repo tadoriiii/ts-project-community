@@ -19,10 +19,20 @@ export const Post = () => {
   console.log("comments", comments);
 
   return (
-    <div className="pageJSX">
+    <div className="postJSX">
       <div className="header">{post.title}</div>
       <div className="content">{post.body}</div>
       <div className="comment">comment</div>
+      <ul>
+        {comments.map((comment) => {
+          return (
+            <li key={comment.id} className="commentList">
+              <div className="commentName">{comment.name}</div>
+              <div className="commentContent">{comment.body}</div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

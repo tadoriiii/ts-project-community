@@ -1,5 +1,49 @@
 .postJSX {
   .header {
+    padding-left: 20px;
+
+    height: 40px;
+
     font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+
+    height: 300px;
+    padding: 20px;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    line-height: 1.5;
+
+    border-bottom: 1px solid #ddd;
+  }
+  .comment {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .commentList {
+    padding: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    .commentName {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .commentContent {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 }
